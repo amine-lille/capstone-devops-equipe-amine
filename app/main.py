@@ -18,7 +18,11 @@ async def metrics_mw(request: Request, call_next):
 
 @app.get("/health")
 def health():
+# <<<<<<< HEAD
     return {"status": "ok", "uptime": time.time()}
+# =======
+    # return {"status": "ok", "version": "1.0.0"}
+# >>>>>>> 3abc1b1 (feat: add version number to /helath)
 
 
 @app.get("/ready")
