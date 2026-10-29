@@ -18,7 +18,6 @@ async def metrics_mw(request: Request, call_next):
 
 @app.get("/health")
 def health():
-    print("health check")
 # <<<<<<< HEAD
     return {"status": "ok", "uptime": time.time()}
 # =======
