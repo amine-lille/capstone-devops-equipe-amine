@@ -18,7 +18,7 @@ async def metrics_mw(request: Request, call_next):
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    return {"status": "ok", "uptime": time.time()}
 
 
 @app.get("/ready")
