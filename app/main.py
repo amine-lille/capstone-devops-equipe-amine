@@ -21,7 +21,7 @@ async def metrics_mw(request: Request, call_next):
 def health():
 # <<<<<<< HEAD
 # <<<<<<< HEAD
-    return {"status": "ok", "uptime": time.timezone()}
+    return {"status": "ok", "version": "1.0.0"}
 # =======
     # return {"status": "ok", "version": "1.0.0"}
 # >>>>>>> 60fee1e (feth: add version number to health)
